@@ -33,6 +33,7 @@
             cursor: pointer;
         }
     </style>
+	
 </head>
 
 <body>
@@ -44,10 +45,17 @@
             <h1><b>Anne TESTET MAL WIEDER</b></h1>
             <h2><b>GIT TUTORIAL GUESTBOOK</b></h2>
         </div>
-
+	<div onclick="test()">
+		TEST
+	</div>
     </div>
-    <!-- Footer -->
 
+<script>
+	async function test(){
+		let all = await desiteAPI.getAllElements("geometry");
+		console.log("alle"+all.length)
+	}
+</script>
 </body>
 
 </html>
